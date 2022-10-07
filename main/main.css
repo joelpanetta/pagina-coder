@@ -1,0 +1,160 @@
+.active{
+    
+    background-color: rgba(238, 93, 93, 0.527);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background-color: rgba(238, 93, 93, 0.527); 
+}
+/* grid */
+.contenedor{
+    display: grid;
+    min-height: 100vh;
+     grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+header{
+    grid-area: header;
+
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+body{
+font-family: 'Roboto', sans-serif;
+background-color: rgb(231, 218, 218);
+}       
+ /* header */
+header{
+margin: 2rem 0rem 0rem 0rem ; 
+border: solid black 2px;
+background-color: rgb(187, 161, 161);
+}
+header nav{
+    width: 100%;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+/* modificacion fuentes navegador */
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(224, 224, 224);
+    padding: 0.4rem 1.6rem ;
+    border: solid black 1px;
+}
+                            /* cierre header */
+                                
+                                 /* main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem 0rem 0rem;
+}
+.fondo{
+    height: 30rem;
+}
+/* distribucion imagenes marcas */
+main section{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main section img{
+    height: 6rem;
+}
+
+#autos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.producto p{
+    font-size: 2rem;
+}
+
+.producto img  {
+height: 30rem;
+}
+
+                                /* cierre main */
+
+/* footer */
+footer img{
+    height: 3.5rem;    
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(184, 166, 166);
+}
+.footertext{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    }
+/* fin de footer */
+@keyframes entrada {
+0%{transform: translatex(-200vh);}
+100%{transform: translatex(0px);}
+}
+
+.animacion{ 
+    animation: entrada 5s 1 ;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+
+
+.car {
+    width: 500px;
+    height: 500px;
+    
+}
+.car img{
+    height: 100%;
+    width: 100%;
+
+}
+.slide{
+    border: solid black 5px;
+    margin: 20px;
+}
+/* aqui empiezan los @media */
+@media all and (max-width:750px){ 
+    .marcas{
+        display: flex;
+        flex-direction: column;
+    }
+    .animacion{
+        width: 300px;
+    }
+}
