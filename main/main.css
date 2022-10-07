@@ -154,7 +154,5 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    .animacion{
-        width: 300px;
-    }
+   
 }
