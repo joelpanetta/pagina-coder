@@ -154,7 +154,11 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    .{
-        width: 300px;
+    .contenedor {
+        display: flex;
+        flex-direction: column;
     }
+
+
+
 }
